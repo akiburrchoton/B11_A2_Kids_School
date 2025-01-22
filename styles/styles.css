@@ -452,6 +452,8 @@
     background-color: var(--black);
   }
 
+
+  /* Footer CSS */
   footer{
     background-color: var(--skyBlue);
     height: 520px;
@@ -488,7 +490,7 @@
     margin-right: 10px;
   }
 
-  .brand-info{
+  .brand-description{
     font-size: 20px;
     color: var(--white);
     line-height: 30px;
@@ -535,5 +537,313 @@
     height: 40px;
   }
 
+  @media screen and (max-width: 576px) {
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    header, main, footer{
+      
+    }
+    .container{
+      max-width: 100%;
+    }
+
+    .btn{
+      padding: 6px 24px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 700;
+    }
+
+    .navBar{
+      display: none;
+    }
+
+    .banner-img{
+      max-width: 100%;
+      height: auto;
+      padding: 0 25px 20px;
+    }
+
+    .banner{
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      margin-bottom: 40px;
+    }
+  
+    .banner-info{
+      max-width: 100%;
+      margin-right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 25px;
+
+    }
+  
+    .banner-info h1{
+      font-size: 38px;
+      margin: 0 0px 20px;
+      line-height: 40px;
+    }
+  
+    
+    .banner-info p {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      padding: 0 20px;
+      line-height: 20px;
+    }
+  
+   
+  /* Curriculum CSS */
+  .section-title{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px ;
+  }
+  .curriculum{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../assets/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .curriculum-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .curriculum-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+
+  .curriculum-card-item{
+    max-width: 100%;
+    height: auto;
+    padding: 36px;
+  }
+
+  .blue-card{
+    border: solid 1px rgba(222, 245, 255, 0.94);
+    background: linear-gradient(to top, var(--white) 75%, #DEF5FF 105%);
+  }
+
+  .yellow-card{
+    border: solid 1px rgba(255, 244, 220, 0.94);
+    background: linear-gradient(to top, var(--white) 75%, #FFF4DC 105%);
+    
+  }
+
+  .purple-card{
+    border: solid 1px rgba(242, 232, 255, 0.94);
+    background: linear-gradient(to top, var(--white) 75%, #F2E8FF 105%);
+  }
+
+  .curriculum-card-item img{
+    max-width: 75px;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .curriculum-card-item .card-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .curriculum-card-item .card-description{
+    font-weight: 500;
+    font-size: 10px;
+    margin-bottom: 22px;
+    padding: 0 40px;
+    line-height: 20px;
+  }
+
+  .curriculum-card-item .card-content .readmore-btn{
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .readmore-blue{
+    color: var(--skyBlue);
+    
+  }
+  .readmore-yellow{
+    color: var(--orange);
+  }
+
+  .readmore-purple{
+    color: var(--purple);
+  }
+
+  .curriculum .swipe-btn{
+    display: none;
+    }
+
+  .curriculum .swipe-btn button{
+    color: var(--white);
+    border: 0;
+    border-radius: 70%;
+    padding: 18px;
+    line-height: 0;
+    font-size: 20px;
+    background-color: var(--orange);
+    margin-right: 5px;
+  }
+
+  
+ /* Stories CSS */
+ .our-stories{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../assets/bg.png");
+  background-position: top;
+  background-repeat: repeat;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.our-stories::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 30%, rgba(254, 161, 1, 0.4));
+}
+
+.our-stories-content{
+  padding: 0 20px;
+}
+
+.story-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card-big{
+  display: none;
+}
+
+.card-small{
+  gap: 10px;
+}
+
+.card-small img{
+  height: auto;
+  max-width: 100%;
+}
 
 
+.card-small .story-card-content{
+  padding: 28px 20px 20px 20px;
+}
+
+.story-card-content .date{
+  font-size: 10px;
+  padding: 10px;
+  max-width: 105px;
+  top: -25px;
+}
+
+.card-small .story-title{
+  font-size: 10px;
+  line-height: 17px;
+}
+
+.story-card-content .story-excerpt{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray);
+  line-height: 28px;
+  font-family: var(--raleway);
+}
+
+.story-btn{
+  padding: 3px 40px;
+}
+
+
+  /* Footer CSS */
+  footer{
+    height: auto;
+    padding: 60px 20px ;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-branding{
+    margin-bottom: 32px;
+  }
+
+  .footer-logo{
+    font-size: 35px;
+    margin-bottom: 22px;
+    line-height: 32px;
+  }
+
+  .footer-logo img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .brand-description{
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 0px;
+  }
+
+  .footer-about{
+     margin-bottom: 20px;
+  }
+
+  .about-school{
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+
+  .footer-about ul li{
+    margin-bottom: 17px;
+  }
+
+  .footer-social-media .keep-in-touch{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer-social-media img{
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+}
